@@ -7,6 +7,8 @@ import sweather from '../../img/sweather.png';
 import tienda from '../../img/tienda.png';
 import usuarios from '../../img/usuarios.png';
 import fortuna from '../../img/fortuna.png';
+import pokedex from '../../img/pokedex.png'
+
 
 function ProjectItem({ imgSrc, title, description, link }) {
   return (
@@ -67,6 +69,12 @@ function PortafolioComponent() {
       title: "Fortune",
       description: "Aqui podras probar tu suerte para dia a dia leyendo frases que te daran un aire diferente.",
       link: "https://fortuna-wong.netlify.app/", // Agrega aquí el enlace correspondiente
+    },
+    {
+      imgSrc: pokedex,
+      title: "Poke-wong",
+      description: "Aqui podras ver todos los pokemones existentes y ver sus atributos asi como abilidades.",
+      link: "https://poke-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
   ];
 
