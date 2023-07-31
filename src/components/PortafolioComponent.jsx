@@ -7,7 +7,8 @@ import sweather from '../../img/sweather.png';
 import tienda from '../../img/tienda.png';
 import usuarios from '../../img/usuarios.png';
 import fortuna from '../../img/fortuna.png';
-import pokedex from '../../img/pokedex.png'
+import pokedex from '../../img/pokedex.png';
+import air from '../../img/air.png';
 
 
 function ProjectItem({ imgSrc, title, description, link }) {
@@ -75,6 +76,12 @@ function PortafolioComponent() {
       title: "Poke-wong",
       description: "Aqui podras ver todos los pokemones existentes y ver sus atributos asi como abilidades.",
       link: "https://poke-wong.netlify.app/", // Agrega aquí el enlace correspondiente
+    },
+    {
+      imgSrc: air,
+      title: "Air-Store",
+      description: "Una tienda dedicada a los tenis Air Jordan mostrando algunos de los modelos mas iconicos",
+      link: "https://air-store.netlify.app/", // Agrega aquí el enlace correspondiente
     },
   ];
 
