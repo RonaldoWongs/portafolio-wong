@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 function SkillBar({ percentage }) {
   return (
     <div className="skill-bar">
@@ -34,6 +35,7 @@ function SkillsComponent() {
 
   return (
     <div className="skills">
+      
       <Container>
         <h2 className='skills-title'>Habilidades Técnicas</h2>
         <Row>

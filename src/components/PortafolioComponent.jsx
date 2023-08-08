@@ -9,6 +9,7 @@ import usuarios from '../../img/usuarios.png';
 import fortuna from '../../img/fortuna.png';
 import pokedex from '../../img/pokedex.png';
 import air from '../../img/air.png';
+import f1 from '../../img/f1.png';
 
 
 function ProjectItem({ imgSrc, title, description, link }) {
@@ -82,6 +83,12 @@ function PortafolioComponent() {
       title: "Air-Store",
       description: "Una tienda dedicada a los tenis Air Jordan mostrando algunos de los modelos mas iconicos",
       link: "https://air-store.netlify.app/", // Agrega aquí el enlace correspondiente
+    },
+    {
+      imgSrc: f1,
+      title: "F1-Store",
+      description: "Articulos exclusivos de la Formula 1",
+      link: "https://formula-store.netlify.app/", // Agrega aquí el enlace correspondiente
     },
   ];
 

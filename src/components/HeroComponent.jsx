@@ -3,12 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Typical from 'react-typical';
 import koba from '../../img/koba2.png';
+import VideoBackground from './VideoBackground';
 
 function HeroComponent() {
   const [textAnimationComplete, setTextAnimationComplete] = useState(false);
 
   return (
     <div className="hero">
+       <VideoBackground />
       <Container>
         <Row>
           <Col md={6} className="text-column">

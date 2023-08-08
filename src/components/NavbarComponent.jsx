@@ -1,10 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 
 function CustomNavbar() {
+  const [navbarFixed, setNavbarFixed] = useState(false);
+
+  // Agregar un event listener para detectar el scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      // Obtener la posición actual del scroll
+      const scrollY = window.scrollY;
+      // Establecer el estado de navbarFixed en true si el scroll es mayor a 100px, de lo contrario, en false.
+      setNavbarFixed(scrollY > 100);
+    };
+
+    // Agregar el event listener al montar el componente
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpiar el event listener al desmontar el componente para evitar fugas de memoria
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar bg="black" variant="dark" expand="lg">
+    <Navbar
+      bg="black"
+      variant="dark"
+      expand="lg"
+      style={navbarFixed ? { backgroundColor: 'black', transition: 'background-color 0.3s ease' } : {}}
+      className={navbarFixed ? 'fixed-top' : ''}
+    >
       <Navbar.Collapse id="navbar-nav" className="justify-content-between">
         <Nav className="button-container-left">
           {/* Cambiamos la ruta en el atributo href */}
