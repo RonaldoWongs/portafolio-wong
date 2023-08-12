@@ -38,7 +38,7 @@
   transform: skewX(-45deg) scale(1, 1);
 }
 
-  /*HeroComponent*/
+/*HeroComponent*/
 
 /* Estilos para el componente Hero */
 .hero {
@@ -66,7 +66,7 @@
 }
 
 .text-column h1 {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
@@ -74,11 +74,13 @@
 }
 
 .text-column p {
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 23px;
+  margin-bottom: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
     Arial, sans-serif;
   color: #ccc;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+
 }
 
 /* Estilos para la columna de la imagen */
@@ -98,6 +100,7 @@
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(20px);
   }
@@ -113,42 +116,42 @@
 }
 
 
-  /*boton de hero*/
+/*boton de hero*/
 
-  .button-container {
-   text-align: center;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .button-container button {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-  
-  .button-container button:hover {
-    color: #fff;
-  }
-  
-  .button-container button::after {
-    content: "";
-    background: #aa0909;
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.3s ease;
-  }
-  
-  .button-container button:hover::after {
-    transition: all 0.3s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
-  }
+.button-container {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button-container button {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-container button:hover {
+  color: #fff;
+}
+
+.button-container button::after {
+  content: "";
+  background: #aa0909;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+
+.button-container button:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
 
 
 
@@ -184,21 +187,26 @@
 }
 
 h2 {
-  color: #333; /* Color del título */
+  color: #333;
+  /* Color del título */
   font-size: 28px;
   font-weight: bold;
 
 }
 
 p {
-  color: #666; /* Color del texto */
+  color: #666;
+  /* Color del texto */
   font-size: 18px;
-  margin-bottom: 20px; /* Agrega un espacio de 20px después de cada párrafo */
+  margin-bottom: 20px;
+  /* Agrega un espacio de 20px después de cada párrafo */
 }
 
 .btn-ver-mas {
-  background-color: #ad2648; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
+  background-color: #ad2648;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -208,7 +216,8 @@ p {
 }
 
 .btn-ver-mas:hover {
-  background-color: #891c3e; /* Color de fondo del botón al pasar el cursor */
+  background-color: #891c3e;
+  /* Color de fondo del botón al pasar el cursor */
 }
 
 /* PortafolioComponent*/
@@ -216,8 +225,8 @@ p {
 
 .portafolio {
   padding: 40px;
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(255,0,176,1) 100%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 89%, rgb(246, 14, 14) 100%);
 }
 
 
@@ -228,37 +237,37 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
 }
 
 .project {
-  flex: 0 0 calc(33.33% - 20px); 
+  flex: 0 0 calc(33.33% - 20px);
   position: relative;
   overflow: hidden;
   border: 1px solid #ccc;
   border-radius: 8px;
-  height: 350px; 
+  height: 350px;
   transition: transform 0.3s ease;
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 71%, rgba(24,135,124,1) 100%);
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 71%, rgba(24, 135, 124, 1) 100%);
 }
 
 .project:hover {
-  transform: scale(1.03); 
+  transform: scale(1.03);
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
-  height: 55%; 
+  height: 55%;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease, opacity 0.8s ease; 
+  transition: transform 0.5s ease, opacity 0.8s ease;
 }
 
 .project:hover .image-container img {
-  opacity: 0.9; 
-  transform: scale(1.1); 
+  opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .overlay-container {
@@ -279,7 +288,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
 
 .project-details {
   padding: 20px;
-  
+
 }
 
 .Title-proyectos {
@@ -291,13 +300,16 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
   animation: blink 2s infinite;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
-    color: #ccc;
+  color: #ccc;
 }
 
 @keyframes blink {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -308,7 +320,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
   font-size: 32px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #ffffff;
-  
+
 }
 
 .project p {
@@ -371,8 +383,8 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
 
 .skills {
   padding: 40px;
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(255,0,176,1) 100%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 87%, rgb(239, 19, 19) 100%);
 }
 
 .skills-title {
@@ -380,20 +392,23 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
   padding: 20px;
   font-size: 40px;
   color: #fff;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- animation: blink 3s infinite;
- text-decoration: none;
- text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
-   color: #ccc;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: blink 3s infinite;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  color: #ccc;
 }
 
 @keyframes blink {
- 0%, 100% {
-   opacity: 1;
- }
- 50% {
-   opacity: 0;
- }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .skill-image {
@@ -446,8 +461,8 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 89%, rgba(25
 
 .contact {
   padding: 60px 0;
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(255,0,176,1) 100%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 87%, rgb(242, 21, 21) 100%);
 }
 
 .contact-heading {
@@ -455,7 +470,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(25
   margin-bottom: 40px;
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
-    color: #000000;
+  color: #000000;
 }
 
 .contact-form {
@@ -559,8 +574,8 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(25
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(15,82,125);
-  background: radial-gradient(circle, rgba(15,82,125,1) 0%, rgba(50,0,30,1) 79%);
+  background: rgb(15, 82, 125);
+  background: radial-gradient(circle, rgba(15, 82, 125, 1) 0%, rgba(50, 0, 30, 1) 79%);
 }
 
 /* Estilos del loader */
