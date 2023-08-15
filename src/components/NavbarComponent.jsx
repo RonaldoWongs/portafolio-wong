@@ -39,14 +39,18 @@ function CustomNavbar() {
           </Button>
         </Nav>
         <Nav className="button-container-right">
-          <Nav.Link href="https://www.instagram.com/ronaldowongs/" target="_blank">
-            <i className="bx bxl-instagram"></i>
+          <Nav.Link href="" target="_blank">
+            <i className='bx bxl-linkedin'></i>
           </Nav.Link>
-          <Nav.Link href="https://www.facebook.com/ronaldo.wm.73/" target="_blank">
-            <i className="bx bxl-facebook-circle"></i>
+          <Nav.Link href="mailto:deigamerwong@gmail.com">
+            <i className='bx bxl-gmail'></i>
           </Nav.Link>
+
           <Nav.Link href="https://github.com/RonaldoWongs" target="_blank">
             <i className="bx bxl-github"></i>
+          </Nav.Link>
+          <Nav.Link href="https://api.whatsapp.com/send?phone=5610537417" rel="noopener noreferrer">
+            <i class='bx bxl-whatsapp' ></i>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

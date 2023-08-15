@@ -44,42 +44,77 @@
 .hero {
   position: relative;
   padding: 90px 0;
+  --s: 100px; /* control the size */
+  --c1: #750220;
+  --c2: #000000;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 10s infinite;
 }
 
-/* Estilos para el video de fondo */
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
 }
 
-/* Estilos para el contenido de texto */
-.text-column {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .text-column h1 {
-  font-size: 65px;
+  font-size: 70px;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(255, 234, 0, 0.5);
   color: #ccc;
 }
 
 .text-column p {
-  font-size: 23px;
+  font-size: 26px;
   margin-bottom: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
     Arial, sans-serif;
   color: #ccc;
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.5);
 
 }
 
@@ -225,8 +260,67 @@ p {
 
 .portafolio {
   padding: 40px;
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 89%, rgb(246, 14, 14) 100%);
+  --s: 100px; /* control the size */
+  --c1: #7623c4;
+  --c2: #000000;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 10s infinite;
+}
+
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
+}
+
+.texto {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(225, 255, 0, 0.5);
 }
 
 
@@ -383,21 +477,87 @@ p {
 
 .skills {
   padding: 40px;
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 87%, rgb(239, 19, 19) 100%);
+  --s: 100px; /* control the size */
+  --c1: #750220;
+  --c2: #000000;
+
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 10s infinite;
+}
+
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
 }
 
 .skills-title {
   text-align: center;
   padding: 20px;
-  font-size: 40px;
+  font-size: 48px;
   color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   animation: blink 3s infinite;
   text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(225, 255, 0, 0.5);
   color: #ccc;
 }
+
+.skill-text {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+.texto-skills {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(225, 255, 0, 0.5);
+}
+
 
 @keyframes blink {
 
@@ -461,8 +621,59 @@ p {
 
 .contact {
   padding: 60px 0;
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 87%, rgb(242, 21, 21) 100%);
+  --s: 100px; /* control the size */
+  --c1: #7623c4;
+  --c2: #000000;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 10s infinite;
+}
+
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
 }
 
 .contact-heading {

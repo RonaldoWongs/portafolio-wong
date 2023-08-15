@@ -96,6 +96,10 @@ function PortafolioComponent() {
     <div className="portafolio">
       <Container>
         <h2 className="Title-proyectos">Mis Proyectos</h2>
+
+        <div className='texto'>
+          <i> Hola estos son todos los proyectos que tengo hasta el momento pero pronto traere aun mas!</i>
+        </div>
         <Row>
           {projects.map((project, index) => (
             <Col key={index} md={4} className="mb-4">
