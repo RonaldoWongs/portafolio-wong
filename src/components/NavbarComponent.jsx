@@ -39,7 +39,7 @@ function CustomNavbar() {
           </Button>
         </Nav>
         <Nav className="button-container-right">
-          <Nav.Link href="" target="_blank">
+          <Nav.Link href="https://www.linkedin.com/in/ronaldo-wm-a4138b288/" target="_blank">
             <i className='bx bxl-linkedin'></i>
           </Nav.Link>
           <Nav.Link href="mailto:deigamerwong@gmail.com">
