@@ -34,7 +34,7 @@ function CustomNavbar() {
       <Navbar.Collapse id="navbar-nav" className="justify-content-between">
         <Nav className="button-container-left">
           {/* Cambiamos la ruta en el atributo href */}
-          <Button variant="dark" className="btn btn-download" href="/ruta_de_tu_curriculum" target="_blank">
+          <Button variant="dark" className="btn btn-download" href="https://drive.google.com/drive/folders/14nI49j1n5rkEMRHUXcmRarVvziEgpYwT?usp=drive_link" target="_blank">
             Curriculum
           </Button>
         </Nav>
