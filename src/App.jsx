@@ -17,7 +17,7 @@ function App() {
     // Simula una carga de 3 segundos antes de mostrar el contenido
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
@@ -27,9 +27,9 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <HeroComponent />
+        
           <PortafolioComponent />
-          <SkillBar />
+      
           <ContactComponent />
           <FooterComponent />
         </>
