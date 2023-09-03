@@ -261,8 +261,8 @@ p {
 .portafolio {
   padding: 40px;
   --s: 100px; /* control the size */
-  --c1: #750220;
-  --c2: #000000;
+  --c1: #fc5d87;
+  --c2: #ffffff;
   
   --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
@@ -622,8 +622,8 @@ p {
 .contact {
   padding: 60px 0;
   --s: 100px; /* control the size */
-  --c1: #750220;
-  --c2: #000000;
+  --c1: #fc5d87;
+  --c2: #ffffff;
 
   --_s: calc(2*var(--s)) calc(2*var(--s));
   --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);

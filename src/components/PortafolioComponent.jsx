@@ -39,55 +39,55 @@ function PortafolioComponent() {
     {
       imgSrc: mascotas,
       title: "WongMascotas",
-      description: "Una agradable pagina donde te mostrara informacion sobre el cuidado de las mascotas.",
+      description: "A nice page where it will show you information about pet care.",
       link: "https://wong-mascotas.netlify.app/index.html", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: sweather,
       title: "Sweather App",
-      description: "En esta pagina podras saber sobre el estado del clima en tu localidad o ciudad.",
+      description: "On this page you can find out about the weather in your town or city.",
       link: "https://sweather-wong-app.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: morty,
       title: "Rick And Morty",
-      description: "Una wiki donde podras ver informacion de cada una de los personajes que han aparecido en esta serie.",
+      description: "A wiki where you can see information about each of the characters that have appeared in this series.",
       link: "https://rick-and-morty-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: tienda,
       title: "E-commerce",
-      description: "Tienda de ropa con funciones de compra y varios diseños de ropa.",
+      description: "Clothing store with shopping functions and various clothing designs.",
       link: "https://e-commerce-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: usuarios,
       title: "Users-login",
-      description: "Esta pagina usa una base de datos para que al crear un usuario este quede guardado hasta borrarlo.",
+      description: "This page uses a database so that when a user is created it is saved until it is deleted.",
       link: "https://login-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: fortuna,
       title: "Fortune",
-      description: "Aqui podras probar tu suerte para dia a dia leyendo frases que te daran un aire diferente.",
+      description: "Here you can try your luck for day to day reading phrases that will give you a different air.",
       link: "https://fortuna-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: pokedex,
       title: "Poke-wong",
-      description: "Aqui podras ver todos los pokemones existentes y ver sus atributos asi como abilidades.",
+      description: "Here you can see all the existing pokemons and see their attributes as well as abilities.",
       link: "https://poke-wong.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: air,
       title: "Air-Store",
-      description: "Una tienda dedicada a los tenis Air Jordan mostrando algunos de los modelos mas iconicos",
+      description: "A store dedicated to Air Jordan sneakers showing some of the most iconic models.",
       link: "https://air-store.netlify.app/", // Agrega aquí el enlace correspondiente
     },
     {
       imgSrc: f1,
       title: "F1-Store",
-      description: "Articulos exclusivos de la Formula 1",
+      description: "Exclusive articles of Formula 1",
       link: "https://formula-store.netlify.app/", // Agrega aquí el enlace correspondiente
     },
   ];
@@ -95,11 +95,9 @@ function PortafolioComponent() {
   return (
     <div className="portafolio">
       <Container>
-        <h2 className="Title-proyectos">Mis Proyectos</h2>
+       
 
-        <div className='texto'>
-          <i> Hola estos son todos los proyectos que tengo hasta el momento pero pronto traere aun mas!</i>
-        </div>
+       
         <Row>
           {projects.map((project, index) => (
             <Col key={index} md={4} className="mb-4">

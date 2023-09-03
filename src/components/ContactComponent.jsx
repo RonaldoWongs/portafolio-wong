@@ -9,12 +9,12 @@ function ContactComponent() {
     <div className="contact">
       <Container>
         <div className="contact-form">
-          <h2 className="contact-heading">Contacto</h2>
+          <h2 className="contact-heading">Contact</h2>
           <Row>
             <Col md={6}>
               <Form action="https://formspree.io/f/maygnboy" method="POST"> {/* Configuramos la URL de acción con Formspree */}
                 <Form.Group controlId="formName">
-                  <Form.Label>Nombre</Form.Label>
+                  <Form.Label>Name</Form.Label>
                   <Form.Control type="text" name="name" placeholder="Ingresa tu nombre" required />
                 </Form.Group>
                 <Form.Group controlId="formEmail">
@@ -22,30 +22,30 @@ function ContactComponent() {
                   <Form.Control type="email" name="email" placeholder="Ingresa tu email" required />
                 </Form.Group>
                 <Form.Group controlId="formMessage">
-                  <Form.Label>Mensaje</Form.Label>
+                  <Form.Label>message</Form.Label>
                   <Form.Control as="textarea" rows={4} name="message" placeholder="Escribe tu mensaje aquí" required />
                 </Form.Group>
                 <Button variant="secondary" type="submit" className="contact-btn">
-                  Enviar Mensaje
+                  Send message
                 </Button>
               </Form>
             </Col>
             <Col md={6}>
               <div className="contact-info">
-                <h3>Información de Contacto</h3>
+                <h3>Contact Information</h3>
                 <p>
-                  Si tienes alguna pregunta o consulta, no dudes en contactarnos. Estamos aquí para ayudarte en lo que
-                  necesites.
+                If you have any questions or concerns, please do not hesitate to contact us. We are here to help you with what
+                  you need.
                 </p>
                 <ul>
                   <li>
                     <i className="bi bi-envelope"></i> deigamerwong@gmail.com
                   </li>
                   <li>
-                    <i className="bi bi-telephone"></i> 5610537417
+                    <i className="bi bi-telephone"></i> 5611355341
                   </li>
                   <li>
-                    <i className="bi bi-geo-alt"></i> Ciudad De Mexico
+                    <i className="bi bi-geo-alt"></i> Mexico City
                   </li>
                 </ul>
               </div>

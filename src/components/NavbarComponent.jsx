@@ -34,8 +34,8 @@ function CustomNavbar() {
       <Navbar.Collapse id="navbar-nav" className="justify-content-between">
         <Nav className="button-container-left">
           {/* Cambiamos la ruta en el atributo href */}
-          <Button variant="dark" className="btn btn-download" href="https://drive.google.com/drive/folders/14nI49j1n5rkEMRHUXcmRarVvziEgpYwT?usp=drive_link" target="_blank">
-            Curriculum
+          <Button variant="dark" className="btn btn-download" href="https://wong-portafolio.netlify.app/" target="_blank">
+            Back To Home
           </Button>
         </Nav>
         <Nav className="button-container-right">
