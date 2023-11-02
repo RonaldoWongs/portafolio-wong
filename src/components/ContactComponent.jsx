@@ -34,8 +34,7 @@ function ContactComponent() {
               <div className="contact-info">
                 <h3>Contact Information</h3>
                 <p>
-                If you have any questions or concerns, please do not hesitate to contact us. We are here to help you with what
-                  you need.
+                If you have any questions or concerns, do not hesitate to contact me, I will help you with whatever you need.
                 </p>
                 <ul>
                   <li>
