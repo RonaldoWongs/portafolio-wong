@@ -22,18 +22,14 @@ function App() {
 
   return (
     <div>
-      {isLoading ? (
-        <LoaderComponent />
-      ) : (
+  
+       
+  
         <>
-          <Navbar />
-        
-          <PortafolioComponent />
-      
-          <ContactComponent />
+        <ContactComponent />
           <FooterComponent />
         </>
-      )}
+      
     </div>
   );
 }

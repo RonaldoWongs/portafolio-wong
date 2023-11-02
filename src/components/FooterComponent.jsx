@@ -9,7 +9,7 @@ function FooterComponent() {
       <Container>
         <Row>
           <Col>
-            <p className="rights">All rights reserved © 2023 Wong</p>
+            <p className="rights">All rights reserved © 2023 WongsDeveloper</p>
           </Col>
         </Row>
       </Container>
